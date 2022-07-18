@@ -1,0 +1,1 @@
+(()=>{"use strict";const e=function(){const e=document.createElement("div"),n=document.createElement("h1");n.innerText="New Restaurant",e.appendChild(n);const t=document.createElement("img");e.appendChild(t);const m=document.createElement("p");return m.innerText="lorem ipsum lorem ipsum lorem ipsum lorem ipsum",e.appendChild(m),e}();document.body.append(e)})();
