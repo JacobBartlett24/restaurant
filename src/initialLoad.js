@@ -1,20 +1,30 @@
-function component(){
+import Background from './woodgrain.jpg';
+import './style.css';
+
+function menu(){
   const element = document.createElement("div");
+  element.setAttribute('id','content');
+
+  const topOfMenu = document.createElement('div')
+  topOfMenu.setAttribute('class','wrapper');
 
   const header = document.createElement("h1");
   header.innerText = "New Restaurant";
-  element.appendChild(header);
+  topOfMenu.appendChild(header);
+  
+  const description = document.createElement("h3");
+  description.innerText = "We serve breakfast!"
+  topOfMenu.appendChild(description);
+  element.appendChild(topOfMenu)
 
-  const image = document.createElement("img");
-  element.appendChild(image);
-
-  const description = document.createElement("p");
-  description.innerText = "lorem ipsum lorem ipsum lorem ipsum lorem ipsum"
-  element.appendChild(description);
+  const ul = document.createElement('ul');
+  ul.innerHTML = 
+  "<li>1</li><li>2</li><li>3</li><li>4</li><li>5</li>";
+  element.appendChild(ul);
 
   return element;
 }
 
-const element = component();
+const element = menu();
 
 export default element;
