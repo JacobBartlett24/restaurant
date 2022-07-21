@@ -9,17 +9,21 @@ function menu(){
   topOfMenu.setAttribute('class','wrapper');
 
   const header = document.createElement("h1");
-  header.innerText = "New Restaurant";
+  header.innerText = "Jacob's Restaraunt";
   topOfMenu.appendChild(header);
   
   const description = document.createElement("h3");
   description.innerText = "We serve breakfast!"
   topOfMenu.appendChild(description);
-  element.appendChild(topOfMenu)
+  element.appendChild(topOfMenu);
 
   const ul = document.createElement('ul');
   ul.innerHTML = 
-  "<li>1</li><li>2</li><li>3</li><li>4</li><li>5</li>";
+  "<li>Grilled Cheese - Cheese, White Bread, Fries</li>" +
+  "<li>Hamburger - Ground Beef, Lettuce, Tomato, Bun</li>"+
+  "<li>Cheeseburger - Ground Beef, Lettuce, Tomato, Bun</li>"+
+  "<li>Hotdog - Weiner, Bread, Ketchup and mustard optional</li>"+
+  "<li>Side of Fries - An optional side of fries</li>";
   element.appendChild(ul);
 
   return element;
