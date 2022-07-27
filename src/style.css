@@ -9,13 +9,32 @@
 body{
   background-image: url('woodgrain.jpg');
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  margin: 5px;
   align-items: center;
   font-family: 'MyFont'; 
 }
 
+.navbar{
+  display: flex;
+  flex-direction: row;
+}
+
+.navbar *{
+  margin: 0 2rem 0 2rem;
+  background-color: white;
+  border: 3px solid black;
+  border-bottom: 3px solid white;
+  border-radius: .5rem;
+}
+
+.navbar *:hover{
+  background-color: brown;
+}
+
 #content{
-  margin: 1rem;
+  /* margin: 1rem; */
   min-height: 800px;
   width: clamp(600px,750px,900px);
   padding: 20px;
